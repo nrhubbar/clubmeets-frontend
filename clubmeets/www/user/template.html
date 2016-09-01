@@ -1,0 +1,16 @@
+<ion-view view-title = "User">
+  <div class="bar bar-subheader bar-dark">
+     <button class="button button-icon icon ion-navicon"></button>
+     <h1 class="title">User</h1>
+  </div>
+  <ion-content class="content has-subheader">
+      <ion-list>
+        <ion-item ng-repeat="user in users" user="user" class="item item-avatar">
+          <h3>{{user.name}}</h3>
+          <p>
+            {{user.email}}
+          </p>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
